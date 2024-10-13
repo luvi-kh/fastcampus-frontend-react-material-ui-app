@@ -11,6 +11,95 @@ import { blue, green, red } from '@mui/material/colors';
 function App() {
   return (
     <div>
+
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+          <Box sx={{
+              width: 300, height: 300, backgroundColor: 'primary.main',
+              '&:hover': {
+                  backgroundColor: 'secondary.main',
+                  opacity: [0.9, 0.8, 0.7]
+              }
+          }} />
+          <Box sx={{
+              width: 300, height: 300, backgroundColor: 'primary.main',
+              '&:hover': {
+                  backgroundColor: 'secondary.main',
+                  opacity: [0.9, 0.8, 0.7]
+              }
+          }} />
+          <Box sx={{
+              width: 300, height: 300, backgroundColor: 'primary.main',
+              '&:hover': {
+                  backgroundColor: 'secondary.main',
+                  opacity: [0.9, 0.8, 0.7]
+              }
+          }} />
+      </Stack>
+
+      <br />
+
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+          <Box
+              flex={1} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+          <Box
+              flex={2} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+          <Box
+              flex={3} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+      </Stack>
+      <br />  
+
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+          <Box
+              flex={1} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+          <Box
+              flex={2} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  display: { xs: 'none', sm: 'block' },
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+          <Box
+              flex={3} p={2}
+              sx={{
+                  width: 300, height: 300, backgroundColor: 'primary.main',
+                  '&:hover': {
+                      backgroundColor: 'secondary.main',
+                      opacity: [0.9, 0.8, 0.7]
+                  }
+              }} />
+      </Stack>
+
      <Button size="large" variant='text'>Hello World</Button>
      <Button startIcon={<AcUnit />} fullWidth size="large" variant='contained'>Hello World</Button>
      <Button endIcon={<Accessibility />} variant='outlined'>Hello World</Button>
