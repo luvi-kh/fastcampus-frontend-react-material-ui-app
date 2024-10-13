@@ -33,9 +33,27 @@ function App() {
        Theme Button
      </Button>
      <CustomThemeButton>Custom Theme Button</CustomThemeButton>
+     <Root>
+        <Typography>down(md): red</Typography>
+        <Typography>up(md): blue</Typography>
+        <Typography>up(lg): green</Typography>
+    </Root>
     </div>
   );
 }
+
+const Root = styled(`div`)(({ theme }) => ({
+
+    [theme.breakpoints.down('md')]: {
+        backgroundColor: red[500]
+    },
+    [theme.breakpoints.up('md')]: {
+        backgroundColor: blue[500]
+    },
+    [theme.breakpoints.up('lg')]: {
+        backgroundColor: green[500]
+    }
+}))
 
 const CustomThemeButton = styled(Button) (({theme}) => ({
   backgroundColor: theme.palette.secondary.main,
